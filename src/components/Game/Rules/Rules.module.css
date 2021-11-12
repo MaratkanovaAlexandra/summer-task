@@ -1,0 +1,16 @@
+.title {
+  color: #3f3f3f;
+
+  font-size: 38px;
+  font-weight: 600;
+
+  margin: 0 0 40px;
+}
+
+.rules {
+  width: 880px;
+  margin: 0 auto;
+  color: #3f3f3f;
+
+  font-size: 22px;
+}
