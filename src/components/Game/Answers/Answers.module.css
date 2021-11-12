@@ -1,0 +1,49 @@
+.title {
+  font-size: 28px;
+  font-weight: 600;
+  color: #3f3f3f;
+}
+
+.container {
+  margin: 0 auto;
+  width: 50%;
+}
+
+.answer {
+  margin: 0 0 10px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.label {
+  font-weight: 600;
+  color: #3f3f3f;
+}
+
+.input {
+  width: 60px;
+}
+
+.submit {
+  padding: 5px 50px;
+  background-color: #d89640;
+  border: 1px solid #d89640;
+  border-radius: 5px;
+
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #fff;
+  box-shadow: 0 4px 2px #3f3f3f4d;
+
+  transition: 0.3s;
+  will-change: transform;
+  cursor: pointer;
+}
+
+.submit:active {
+  box-shadow: 0 8px 4px #3f3f3f4d;
+  transform: scale(0.96);
+  background-color: #b68039;
+  border: 1px solid #b68039;
+}
