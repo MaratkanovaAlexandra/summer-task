@@ -1,6 +1,4 @@
 .contianer > p {
-  margin: 20px 0 0;
-
   font-size: 28px;
   font-weight: 600;
   color: #3f3f3f;
@@ -9,7 +7,7 @@
 .equations {
   margin: 10px auto;
   padding: 5px 0;
-  max-width: 300px;
+  width: 300px;
 
   font-size: 24px;
   font-weight: 600;
@@ -17,4 +15,6 @@
   color: #fff;
   background-color: #615454;
   border-radius: 5px;
+
+  cursor: default;
 }
