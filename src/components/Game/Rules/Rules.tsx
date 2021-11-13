@@ -4,7 +4,7 @@ import styles from './Rules.module.css';
 const Rules: FC = () => {
   return (
     <>
-    <div className={styles.title}>Intersection point of two straight lines on a plane</div>
+    <div className={styles.title}>Intersection point of two straight lines</div>
     <div className={styles.rules}>
       Your task is to find intersection point of two straight lines on a plane.
       Your answer can not have any letters or other symbols. To submit answer click submit button. 

@@ -1,9 +1,8 @@
-import React, { FC } from 'react';
+import React, { FC, useContext } from 'react';
+import Context from '../../Contex/Context';
 import styles from './Equations.module.css';
 
 type EquationsProps = {
-  f1: number[],
-  f2: number[],
 }
 
 const getEquations = (f: number[]) => {
@@ -12,7 +11,7 @@ const getEquations = (f: number[]) => {
   else result += f[0] === -1? '-x' : `-${Math.abs(f[0])}x`;
 
   if (f[1] > 0) result += f[1] === 1? ' + y' : ` + ${f[1]}y`
-  else result += f[1] === -1? '- y' : ` - ${Math.abs(f[1])}y`; 
+  else result += f[1] === -1? ' - y' : ` - ${Math.abs(f[1])}y`; 
 
   if (f[2] > 0) result += ` + ${f[2]}`
   else  result += ` - ${Math.abs(f[2])}`
@@ -21,7 +20,7 @@ const getEquations = (f: number[]) => {
 }
 
 const Equations: FC<EquationsProps> = (props) => {
-  const { f1, f2 } = props;
+  const { f1, f2 } = useContext(Context);
 
   return (
     <div className={styles.contianer}>

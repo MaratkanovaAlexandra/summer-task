@@ -1,10 +1,19 @@
 import React, { FC } from 'react';
-import './Game.css'
 
-const Game: FC = () => {
+import Rules from './Rules';
+import Equations from './Equations';
+import Answers from './Answers';
+
+import styles from './Game.module.css';
+
+const Game: FC = () => {  
   return (
-    <div>
-
+    <div className={styles.container}>
+      <Rules />
+      <div className={styles.flexContainer}>
+        <Equations />
+        <Answers />
+      </div>
     </div>
   );
 }
