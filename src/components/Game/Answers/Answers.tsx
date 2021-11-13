@@ -15,6 +15,12 @@ const Answers: FC = () => {
     setY(event.target.value);
   }
 
+  const ClickEvent = (x: number, y: number) => {
+    submit(Number(x),Number(y));
+    setX('');
+    setY('');
+  }
+
   return (
     <form>
         <p className={styles.title}>Your Answers</p>
@@ -28,7 +34,7 @@ const Answers: FC = () => {
             <input type='text' className={styles.input} name='Y' id='Y' value={y} onChange={changeY} />
           </div>
         </div>
-        <button type='button' className={styles.submit} onClick={() => submit(Number(x),Number(y))} >Submit</button>
+        <button type='button' className={styles.submit} onClick={() => ClickEvent(Number(x),Number(y))} >Submit</button>
       </form>
   );
 }
