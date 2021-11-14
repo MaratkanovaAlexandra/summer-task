@@ -32,7 +32,7 @@ const App: FC = () => {
 
   return (
     <div className="App">
-      <Context.Provider value={{ f1, f2, points, submit }}>
+      <Context.Provider value={{ f1, f2, points, submit, setPoints }}>
         <Header />
         <Game />
         <Footer />

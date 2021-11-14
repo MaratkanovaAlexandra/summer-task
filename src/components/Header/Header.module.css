@@ -1,0 +1,32 @@
+.header {
+  max-width: 900px;
+  margin: 20px auto 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.points {
+  font-size: 30px;
+  font-weight: 600;
+  color: #3f3f3f;
+}
+
+.btn {
+  padding: 0 25px;
+  font-size: 20px;
+
+  background-color: #c94040;
+  border: 1px solid #c94040;
+  color: #fff;
+  box-shadow: 0 4px 2px #3333337a;
+  cursor: pointer;
+  border-radius: 5px;
+
+  transition: 0.3s;
+  will-change: transform;
+}
+
+.btn:active {
+  box-shadow: 0 8px 4px #3f3f3f4d;
+  transform: scale(0.96);
+}
