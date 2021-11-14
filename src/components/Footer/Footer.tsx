@@ -1,10 +1,10 @@
 import React,{ FC } from 'react';
-import './Footer.css'
+import styles from './Footer.module.css'
 
 const Footer: FC = () => {
   return (
-    <footer>
-
+    <footer className={styles.footer}>
+      UDSU Uzhevsk 2021
     </footer>
   );
 }
